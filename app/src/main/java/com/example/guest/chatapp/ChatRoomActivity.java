@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.guest.chatapp.helper.FontManager;
 import com.example.guest.chatapp.models.ChatMessage;
 import com.firebase.ui.database.FirebaseListAdapter;
 import com.google.firebase.auth.FirebaseAuth;
@@ -33,6 +34,8 @@ public class ChatRoomActivity extends AppCompatActivity {
         setContentView(R.layout.activity_chat_room);
 
         ButterKnife.bind(this);
+
+//        fab.setIconDrawable(FontManager.getTypeface(this,"fontawesome-webfont.ttf"));
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
